@@ -1,0 +1,17 @@
+﻿<Window x:Class="DesktopAlarm.NotificationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Message Arrived" MinHeight="150" MinWidth="250" Height="200" Width="400">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="117*"/>
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="MessageTextBlock" Margin="27,16,27,16" Text="TextBlock" Grid.ColumnSpan="2" Foreground="Black" TextAlignment="Left" TextWrapping="Wrap" FontSize="14"/>
+        <Button Name="ConfirmBtn" Content="OK" Grid.ColumnSpan="2" Margin="27,0,27,0" Background="#FFEDF0F5" BorderBrush="#FFCCD4E2" Foreground="Black" Height="26" VerticalAlignment="Center" Grid.Row="1"/>
+    </Grid>
+</Window>
